@@ -11,6 +11,7 @@ public class Zing implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		Blocks.RegisterBlocks();
 		Items.RegisterItems();
 		Materials.RegisterMaterials();
 	}

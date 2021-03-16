@@ -3,6 +3,7 @@ package dbp.zing;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.item.BlockItem;
 import static dbp.zing.Setting.settingsEnum.*;
 
 public class Items {
@@ -49,7 +50,8 @@ public class Items {
 		coal_chunk(new Item(basic.setting)),
 		industrial_diamond(new Item(basic.setting)),
 		copper_credit(new Item(basic.setting)),
-		silver_credit(new Item(basic.setting));
+		silver_credit(new Item(basic.setting)),
+		ore_copper(new BlockItem(Blocks.BlocksEnum.ore_copper.block, basic.setting));
 
 		public final Item item;
 		ItemsEnum(Item item) {
